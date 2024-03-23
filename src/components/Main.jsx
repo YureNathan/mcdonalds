@@ -8,22 +8,27 @@ import medidas from "../../src/assets/medidas.png"
 
 import Card from "./Cards";
 import * as S from "./header.style"
+import { useState } from "react"
+
 export default function Main() {
+
+  const [produto, setProduto] = useState(bigmac);
+
   return (
     <main>
 <S.Section>
       <div className="container">
-        <img src={bigmac}alt="" />
-        <img  className="text" src={texto} alt="" />
+        <img src={produto}alt="Produto atual" />
+        <img  className="text" src={texto} alt="Banner" />
         </div>
         <figure>
-        <img className="bigmac" src={bigmac} alt="" />
-        <img className="batata"src={batata} alt="" />
-        <img className="sorvete"src={sorvete} alt="" />
+        <img onClick={()=>{setProduto(bigmac)}}className="bigmac" src={bigmac} alt="Foto BIG MAC" />
+        <img onClick={()=>{setProduto(batata)}} className="batata"src={batata} alt="Foto batata frita" />
+        <img onClick={()=>{setProduto(sorvete)}} className="sorvete"src={sorvete} alt="Foto casquinha" />
       </figure>
       
       </S.Section>
-    <S.SectionT>
+    <S.SectionT>  
     <h2 className="promo">Promoção</h2>
     <div className="cards">
       <Card imagem={sofa} texto={"Que tal um #MéquiNoSofá?"}></Card>

@@ -6,7 +6,6 @@ import * as S from "./header.style"
 export default function Header() {
   return (
     <S.Header>
-
       <img src={logo} alt="logo MC Donalds" />  
       <section>
         <div className="logoApp">

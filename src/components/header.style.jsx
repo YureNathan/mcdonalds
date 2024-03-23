@@ -24,13 +24,19 @@ export const Header = styled.header`
     font-size: 14px;
     color: #606060;
     gap: 5px;
+    cursor: pointer;
   }
   .logoCell {
     background-color: #ffc72c;
     border-radius: 10px;
     justify-content: center;
     color: black;
+    cursor: pointer;
   }
+  .logoCell:hover{
+    background-color:#C08B00;
+  }
+  
 `;
 export const Section = styled.section`
   background-color: #ffc72c;
@@ -49,9 +55,10 @@ export const Section = styled.section`
   figure {
     display: flex;
     justify-content: center;
+    cursor: pointer;
   }
   figure img {
-    max-width: 12vw;
+    max-width: 10vw;
     max-height: 12vh;
   }
 `;
@@ -96,7 +103,12 @@ export const Card = styled.div`
     min-height: 17%;
     border-radius: 7px;
     font-weight: bold;
+    cursor: pointer;
   }
+  button:hover{
+    background-color:#C08B00;
+  }
+  
   h2 {
     font-size: 13px;
     text-align: center;
@@ -120,6 +132,7 @@ export const Footer = styled.footer`
   }
   p {
     font-size: 14px;
+    color: #606060;
   }
   .AppStore {
     display: flex;
