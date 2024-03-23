@@ -24,4 +24,4 @@ O projeto faz uso dos Hooks `useState` e `useEffect` do React. O `useState` é u
 Contribuições são sempre bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Imagem do Projeto finalizado
-<img src="/assets/img/page.png">
+<img src="src/assets/page.png">
