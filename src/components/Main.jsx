@@ -28,7 +28,7 @@ export default function Main() {
   },[produto]);
   return (
     <main>
-<S.Section style={{ backgroundColor: cor}}>
+<S.Section style={{ backgroundColor: cor, transition: '1.5s'}}>
       <div className="container">
         <img src={produto}alt="Produto atual" />
         <img  className="text" src={texto} alt="Banner" />
