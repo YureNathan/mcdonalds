@@ -8,15 +8,27 @@ import medidas from "../../src/assets/medidas.png"
 
 import Card from "./Cards";
 import * as S from "./header.style"
-import { useState } from "react"
+import { useState, useEffect} from "react"
 
 export default function Main() {
 
   const [produto, setProduto] = useState(bigmac);
+  const [cor, setCor] = useState("#ffc72c");
 
+  useEffect(()=>{
+    if (produto === (bigmac)){
+      setCor("#ffc72c");
+    }
+    else if (produto === (batata)){
+      setCor("#9c0409f8")
+    }
+    else {
+      setCor("#d8d8c0")
+    }
+  },[produto]);
   return (
     <main>
-<S.Section>
+<S.Section style={{ backgroundColor: cor}}>
       <div className="container">
         <img src={produto}alt="Produto atual" />
         <img  className="text" src={texto} alt="Banner" />

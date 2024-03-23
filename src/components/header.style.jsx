@@ -58,7 +58,8 @@ export const Section = styled.section`
     cursor: pointer;
   }
   figure img {
-    max-width: 10vw;
+    width: 9vw;
+    max-width: 9vw;
     max-height: 12vh;
   }
 `;
