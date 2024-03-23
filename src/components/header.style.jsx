@@ -31,17 +31,18 @@ export const Header = styled.header`
     color: black;
   }
 `
-export const Main = styled.main `
- 
+export const Section = styled.section`
+    border: solid blue;
+     background-color: #FFC72C;
   .container {
     height: 60vh;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding: 0 10% 0 0 ;
-    background-color: #FFC72C;
-    
+   
+    border: 2px solid red;
 
   }
   .text {
@@ -49,4 +50,5 @@ export const Main = styled.main `
     height: 230px;
     border: solid 2px red;
   }
+
 `
