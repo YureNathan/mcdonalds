@@ -1,14 +1,14 @@
-import styled, {createGlobalStyle} from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,200,300..700;1,300..700&display=swap');
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Red Hat Text", sans-serif;
   }
-`
+`;
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,8 @@ export const Header = styled.header`
   section {
     display: flex;
   }
-  .logoApp, .logoCell {
+  .logoApp,
+  .logoCell {
     display: flex;
     align-items: center;
     width: 12vw;
@@ -25,14 +26,14 @@ export const Header = styled.header`
     gap: 5px;
   }
   .logoCell {
-    background-color:#FFC72C;
+    background-color: #ffc72c;
     border-radius: 10px;
     justify-content: center;
     color: black;
   }
-`
+`;
 export const Section = styled.section`
-  background-color: #FFC72C;
+  background-color: #ffc72c;
   .container {
     height: 50vh;
     width: 100%;
@@ -44,7 +45,6 @@ export const Section = styled.section`
   .text {
     width: 550px;
     height: 230px;
-
   }
   figure {
     display: flex;
@@ -54,38 +54,35 @@ export const Section = styled.section`
     max-width: 12vw;
     max-height: 12vh;
   }
-`
+`;
 export const SectionT = styled.section`
- background-color: #feb706; 
- color: white;
- height: 50vh; 
- display: flex;
- justify-content: flex-end;
- align-items: center;
- flex-direction: column;
- gap: 45px;
- /* ajustar tamanho do texto */
- .promo {
-font-size: 35px;
- 
- }
- 
- .cards {
+  background-color: #feb706;
+  color: white;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+  .promo {
+    font-size: 35px;
+  }
+
+  .cards {
     display: flex;
     gap: 25px;
-    border: solid palevioletred 2px;
     clear: both;
-    float: left;  
+    float: left;
   }
-`
+`;
 export const Card = styled.div`
-  border: solid white 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 15vw;
   height: 30vh;
-  gap: 12px;
+  gap: 13px;
   background-color: white;
   color: black;
   border-radius: 7px;
@@ -93,14 +90,40 @@ export const Card = styled.div`
     width: 100%;
   }
   button {
-    background-color:#FFC72C;
+    background-color: #ffc72c;
     border: none;
     width: 45%;
     min-height: 17%;
     border-radius: 7px;
+    font-weight: bold;
   }
   h2 {
     font-size: 13px;
     text-align: center;
   }
-`
+`;
+export const Footer = styled.footer`
+  display: flex;
+  height: 13vh;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15vw;
+    img {
+      width: 24px;
+    }
+  }
+  p {
+    font-size: 14px;
+  }
+  .AppStore {
+    display: flex;
+    width: 25vw;
+    justify-content: space-around;
+  }
+`;
